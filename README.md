@@ -505,14 +505,38 @@ vista使用修改过的BIBA安全模型，有三个级别
 
 ---
 
-于是在我们的模型中，我们设计了用户和沙盒沟通机制，任何沟通对象首先必须被用户初始化
+于是在我们的模型中，我们设计了用户与沙盒沟通机制，任何沙盒(沟通对象)首先必须被用户初始化
 
-沟通对象只能与创建它的用户沟通，不能与其它用户沟通
+沙盒只能与创建它的用户沟通，不能与其它用户沟通
 
-我们重新写了所有的chrome安全的代码，所以我们可以控制所有的东西
+因为我们写了所有的chrome安全的代码，所以我们可以控制所有的实现
 
 好吧，我承认，插件(PLUGINS)是一个例外
 
 因为网页应用不仅仅是HTML和Javascript
 
 ---
+
+在我们设计的这个权限系统中，google chrome的渲染程序可能运行在非常低的权限等级，而插件却可能运行在相同权限等级或者更高的权限等级
+
+插件有能力不遵守公共的标准，所以我们不能让沙盒运行的权限等级超过chrome的等级
+
+though with some small changes on the part of the pulgin maker, we can get them to run at a lower privilege which would be much much safer
+
+虽然在插件制造者方面做了一些小改动，我们可以让它们在较低的权限下运行，这将是更安全的
+
+and meanwhile, we have a huge surface area reduction in vulnerability, from all this to this
+
+就是这样，我们让产品防御的脆弱点，从整体缩小到仅仅--
+
+--插件上
+
+---
+
+当一个插件与HTML和Javascript组合在一起，它们运行在相同的进程时
+
+如果任何运行崩溃或者内存冲突导致进程异常，它们就都完了
+
+于是，我们将插件从渲染进程中拉了出来，作为一个单独的进程而存在
+
+通过这种设计方式，即使插件进程出现异常，页面部分仍然作为沙盒运行
