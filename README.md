@@ -566,3 +566,96 @@ google chrome持续下载网站黑名单，一个是钓鱼网站，一个恶意�
 第二个名单是恶意网站，这些网站只要你一访问，就会在你的电脑上大肆破坏
 
 当我们发现有些网站上被坏人用于传播病毒，我们会提醒网站的所有者，他们不是有意这样的，收到提醒后他们会清除病毒
+
+---
+
+another thing we build into google chrome is gears
+
+我们在google chrome中创建的另一个东西是构件(gears)
+
+gears basically adds an api to your browser -- an extension that improves its capabilities
+
+构件基本上给你的浏览器添加了一个api--一个提高其能力的扩展
+
+从我的的角度来看,google chrome构件从两个方向切入网络
+
+浏览器项目让用户的体验更好
+
+而构件团队使得浏览器对网页开发者更友好
+
+---
+
+今天的浏览器对于开发者的应用有很多限制，这些浏览器具备这些功能，那些浏览器具备那些功能，但是我们想，如果一个浏览器有有一个很酷的功能，如何让其它浏览器也很容易地具备--
+
+--于是我们想如何让开发者能很容易地跨越不同浏览器
+
+构件正是为此为创造出来，他改善了所有浏览器的基本功能，包括google chrome
+
+whatever the advantages of building native apps over web apps, we want to build those enhancements through gears--
+
+无论桌面应用比网络应用有什么优势，我们都希望通过构件来构建这些增强功能--
+
+--并且使得这些功能成为网络时代的新标准
+
+---
+
+所以，开放的标准是让浏览器变得更好的一种好方法
+
+团队也做了一些其它有趣的事情，包括提高速度、改善稳定性和人机交互，例如新的TAB页
+
+这些工作都可能变成标准--
+
+--有些也不会
+
+但是--
+
+--既然它是开源的--
+
+--其它的浏览器开发者就可以从中获得他们想要的
+
+---
+
+他们不用付钱给我们，他们也不必询问我们
+
+他们也不必分享他们基于此的工作成果或者报告bug*
+
+*虽然我们提供系统供他们这么做，只要他们愿意
+
+但他们可以使用我们所提供的代码来构建他们自己的程序
+
+虽然我们可以把这一切都锁起来，只为我们自己服务
+
+但是google生存在互联网上
+
+it's in our interest to make the internet better and without competition we have stagnation
+
+让互联网变得更好符合我们的利益，没有竞争就会停滞不前
+
+这就是为什么我们选择开源的原因，我们需要互联网成为一个充满公平、智慧和安全的地方
+
+---
+
+让所有的浏览器变得功能更强大，是与创造google chrome同样令人激动人心的事情--
+
+--为了让网页能够不断进化，构建现代网页应用的坚实基础
+
+我们为其它开源浏览器，例如MOZILLA和WEBKIT也提供构件
+
+这是我们的贡献，我们希望人们能理解这些想法，调整它们，使用它们，不断改进它们，推进互联网的发展
+
+---
+
+台词：
+
+Google Chrome团队
+
+漫画改编：
+
+Scott McCloud
+
+翻译：
+
+kursk.ye@gmail.com
+
+该文档全部翻译文件可从 https://github.com/kursk-ye/ChromeTranslate 免费获取
+传播时请保留原作者，尊重劳动成果
